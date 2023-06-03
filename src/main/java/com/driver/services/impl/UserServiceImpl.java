@@ -4,6 +4,7 @@ import com.driver.repository.CountryRepository;
 import com.driver.repository.ServiceProviderRepository;
 import com.driver.repository.UserRepository;
 import com.driver.services.UserService;
+import org.apache.catalina.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -18,12 +19,13 @@ public class UserServiceImpl implements UserService {
     CountryRepository countryRepository3;
 
     @Override
-    public User register(String username, String password, String countryName) throws Exception{
+    public void register(String username, String password, String countryName) throws Exception{
+
 
     }
 
     @Override
-    public User subscribe(Integer userId, Integer serviceProviderId) {
+    public void subscribe(Integer userId, Integer serviceProviderId) {
 
     }
 }
